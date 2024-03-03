@@ -60,7 +60,7 @@ function filterData(event) {
 }
 
 const handleOnline=(type)=>{
-  debugger;
+ debugger;
 let onlineData=data.filter(value=>{
   return value.status==type
 
@@ -75,7 +75,8 @@ console.log(onlineData)
     style={{padding:"10px",margin:"20px",borderRadius:"15px", width:"1000px",border:'none'}}>
 
     </input>
-    <button onclick={()=>handleOnline("Offline")}> online </button>
+    <button onClick={()=>handleOnline("Online")}> online </button>
+    <button onClick={()=>handleOnline("Offline")}> Offlline </button>
 
             <div style={{display:'grid',gridTemplateColumns:'auto auto auto',gap:'1%', justifyContent:'space-evenly'}}>
 
